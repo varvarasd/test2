@@ -9,6 +9,9 @@ class App extends React.Component {
       <div>
         Welcome to my test2 App
         <Display />
+        <Display 
+          value="117"
+        />
         <ButtonPanel />
       </div>
     );
