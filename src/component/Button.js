@@ -3,9 +3,9 @@ import React from 'react';
 class Button extends React.Component {
     render() {
         return(
-            <div>
-                Welcome to my Button.
-            </div>
+            <button>
+                9
+            </button>
         );
     }
 }
