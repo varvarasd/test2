@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Display extends React.Component {
     render() {
@@ -13,7 +14,13 @@ class Display extends React.Component {
 }
 
 Display.propTypes = {
-    value: React.PropTypes.string,
+    value: PropTypes.string,
 };
 
 export default Display;
+
+// PropTypes has been deprecated
+// to fix that please install prop-types library like so:
+// npm install --save prop-types
+// Make sure to import it in the component that's using it 
+// and remove the 'React.' before it when used, as in the current commit

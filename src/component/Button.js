@@ -1,6 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Button extends React.Component {
+    handleClick() {
+        console.log('cick');
+    }
+
     render() {
         return(
             <button>
@@ -11,7 +16,7 @@ class Button extends React.Component {
 }
 
 Button.propTypes = {
-    name: React.PropTypes.string,
+    name: PropTypes.string,
 };
 
 export default Button;
