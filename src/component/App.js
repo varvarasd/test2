@@ -6,7 +6,7 @@ class App extends React.Component {
       <div>
         Welcome to my test2 App
       </div>
-    )
+    );
   }
 }
 
