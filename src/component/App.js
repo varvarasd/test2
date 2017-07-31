@@ -4,6 +4,11 @@ import ButtonPanel from './ButtonPanel';
 
 
 class App extends React.Component {
+
+  handleClick = (buttonName) => {
+    console.log('click', buttonName);
+  }
+
   render() {
     return (
       <div>
@@ -12,7 +17,9 @@ class App extends React.Component {
         <Display 
           value="117"
         />
-        <ButtonPanel />
+        <ButtonPanel
+          clickHandler = {this.handleClick}
+        />
       </div>
     );
   }

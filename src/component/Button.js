@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class Button extends React.Component {
 
     handleClick = () => {
-        console.log('click');
+        this.props.clickHandler(this.props.name);
     }
 
     render() {
@@ -20,6 +20,7 @@ class Button extends React.Component {
 
 Button.propTypes = {
     name: PropTypes.string,
+    clickHandler: PropTypes.func,
 };
 
 export default Button;
