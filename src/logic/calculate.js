@@ -13,7 +13,7 @@ Calculator data object contains:
 
 */
 
-eexport default function calculate(obj, buttonName) {
+export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {
       total: null,
